@@ -1,7 +1,6 @@
 import json
 import requests
 
-
 def reply_with_ai(myamsg):
     headers = {
         'Content-Type': 'application/json; charset=utf-8',
