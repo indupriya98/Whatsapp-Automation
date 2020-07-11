@@ -7,7 +7,7 @@ driver = webdriver.Chrome('./chromedriver.exe')
 driver.get('https://web.whatsapp.com')
 input('press anything to start')
 search = driver.find_element_by_xpath('//*[@id="side"]/div[1]/div/label/div/div[2]')
-search.send_keys('Deepaaaaa')
+search.send_keys('ABC')
 time.sleep(5)
 name = driver.find_element_by_class_name('_325lp')
 name.click()
@@ -50,14 +50,4 @@ while True:
     if flag:
         output = reply_with_ai(lamsg)
         send_msg(output)
-        '''if 'hi' in lamsg:
-            send_msg('hello')
-        elif 'class' in lamsg:
-            send_msg('no class')
-        elif 'lunch' in lamsg:
-            send_msg('ha nuv')
-        elif 'ssup' in lamsg:
-            send_msg('roof')
-        else:
-            send_msg('sorry')'''
 
